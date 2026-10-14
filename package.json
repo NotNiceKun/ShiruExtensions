@@ -1,0 +1,14 @@
+{
+  "name": "shiru-platform-extensions",
+  "version": "1.0.0",
+  "description": "Shiru torrent extensions (AnimeTosho, Nyaa, SubsPlease) that prefer releases from Crunchyroll, Bilibili, YouTube and other streaming platforms",
+  "license": "GPL-3.0",
+  "type": "module",
+  "main": "index.json",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "bun scripts/build.js",
+    "smoke": "bun scripts/smoke.js",
+    "test": "bun test tests"
+  }
+}

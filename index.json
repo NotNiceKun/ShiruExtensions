@@ -1,0 +1,303 @@
+[
+  {
+    "id": "platform-animetosho",
+    "name": "AnimeTosho+",
+    "version": "1.0.0",
+    "main": "sources/animetosho",
+    "update": "gh:NotNiceKun/ShiruExtensions",
+    "type": "torrent",
+    "speed": "fast",
+    "accuracy": "high",
+    "settings": [
+      {
+        "type": "multiselect",
+        "key": "platforms",
+        "label": "Preferred Platforms",
+        "default": [
+          "crunchyroll",
+          "bilibili",
+          "youtube"
+        ],
+        "options": [
+          {
+            "label": "Crunchyroll",
+            "value": "crunchyroll"
+          },
+          {
+            "label": "Bilibili (B-Global)",
+            "value": "bilibili"
+          },
+          {
+            "label": "YouTube",
+            "value": "youtube"
+          },
+          {
+            "label": "Netflix",
+            "value": "netflix"
+          },
+          {
+            "label": "Amazon Prime Video",
+            "value": "amazon"
+          },
+          {
+            "label": "Disney+",
+            "value": "disney"
+          },
+          {
+            "label": "HIDIVE",
+            "value": "hidive"
+          },
+          {
+            "label": "ADN",
+            "value": "adn"
+          },
+          {
+            "label": "Bahamut (Ani-Gamer)",
+            "value": "bahamut"
+          },
+          {
+            "label": "iQIYI",
+            "value": "iqiyi"
+          },
+          {
+            "label": "ABEMA",
+            "value": "abema"
+          }
+        ],
+        "description": "Releases ripped from these streaming services (detected from tags like CR, B-Global, YT) are marked as Best."
+      },
+      {
+        "type": "dropdown",
+        "key": "platformMode",
+        "label": "Platform Mode",
+        "default": "prefer",
+        "options": [
+          {
+            "label": "Prefer (mark as Best)",
+            "value": "prefer"
+          },
+          {
+            "label": "Only show preferred platforms",
+            "value": "only"
+          }
+        ],
+        "description": "Prefer keeps every result but ranks preferred platforms first. Only hides releases from other sources."
+      },
+      {
+        "type": "toggle",
+        "key": "titleFallback",
+        "label": "Title Search Fallback",
+        "default": true,
+        "description": "Search by title when no release is tagged with the AniDB episode/anime ID."
+      }
+    ],
+    "description": "AnimeTosho feed using AniDB IDs for exact matches. Prefers WEB releases from Crunchyroll, Bilibili, YouTube and other streaming platforms."
+  },
+  {
+    "id": "platform-nyaa",
+    "name": "Nyaa+",
+    "version": "1.0.0",
+    "main": "sources/nyaa",
+    "update": "gh:NotNiceKun/ShiruExtensions",
+    "type": "torrent",
+    "speed": "moderate",
+    "accuracy": "medium",
+    "unregulated": true,
+    "settings": [
+      {
+        "type": "multiselect",
+        "key": "platforms",
+        "label": "Preferred Platforms",
+        "default": [
+          "crunchyroll",
+          "bilibili",
+          "youtube"
+        ],
+        "options": [
+          {
+            "label": "Crunchyroll",
+            "value": "crunchyroll"
+          },
+          {
+            "label": "Bilibili (B-Global)",
+            "value": "bilibili"
+          },
+          {
+            "label": "YouTube",
+            "value": "youtube"
+          },
+          {
+            "label": "Netflix",
+            "value": "netflix"
+          },
+          {
+            "label": "Amazon Prime Video",
+            "value": "amazon"
+          },
+          {
+            "label": "Disney+",
+            "value": "disney"
+          },
+          {
+            "label": "HIDIVE",
+            "value": "hidive"
+          },
+          {
+            "label": "ADN",
+            "value": "adn"
+          },
+          {
+            "label": "Bahamut (Ani-Gamer)",
+            "value": "bahamut"
+          },
+          {
+            "label": "iQIYI",
+            "value": "iqiyi"
+          },
+          {
+            "label": "ABEMA",
+            "value": "abema"
+          }
+        ],
+        "description": "Releases ripped from these streaming services (detected from tags like CR, B-Global, YT) are marked as Best."
+      },
+      {
+        "type": "dropdown",
+        "key": "platformMode",
+        "label": "Platform Mode",
+        "default": "prefer",
+        "options": [
+          {
+            "label": "Prefer (mark as Best)",
+            "value": "prefer"
+          },
+          {
+            "label": "Only show preferred platforms",
+            "value": "only"
+          }
+        ],
+        "description": "Prefer keeps every result but ranks preferred platforms first. Only hides releases from other sources."
+      },
+      {
+        "type": "dropdown",
+        "key": "category",
+        "label": "Category",
+        "default": "1_2",
+        "options": [
+          {
+            "label": "Anime - English-translated",
+            "value": "1_2"
+          },
+          {
+            "label": "Anime - Non-English-translated",
+            "value": "1_3"
+          },
+          {
+            "label": "Anime - Raw",
+            "value": "1_4"
+          },
+          {
+            "label": "Anime - All",
+            "value": "1_0"
+          }
+        ],
+        "description": "Nyaa category to search."
+      },
+      {
+        "type": "toggle",
+        "key": "trustedOnly",
+        "label": "Trusted Only",
+        "default": false,
+        "description": "Only return releases from trusted uploaders."
+      }
+    ],
+    "description": "Nyaa title search with episode matching. Prefers WEB releases from Crunchyroll, Bilibili, YouTube and other streaming platforms."
+  },
+  {
+    "id": "platform-subsplease",
+    "name": "SubsPlease",
+    "version": "1.0.0",
+    "main": "sources/subsplease",
+    "update": "gh:NotNiceKun/ShiruExtensions",
+    "type": "torrent",
+    "speed": "fast",
+    "accuracy": "medium",
+    "settings": [
+      {
+        "type": "multiselect",
+        "key": "platforms",
+        "label": "Preferred Platforms",
+        "default": [
+          "crunchyroll",
+          "bilibili",
+          "youtube"
+        ],
+        "options": [
+          {
+            "label": "Crunchyroll",
+            "value": "crunchyroll"
+          },
+          {
+            "label": "Bilibili (B-Global)",
+            "value": "bilibili"
+          },
+          {
+            "label": "YouTube",
+            "value": "youtube"
+          },
+          {
+            "label": "Netflix",
+            "value": "netflix"
+          },
+          {
+            "label": "Amazon Prime Video",
+            "value": "amazon"
+          },
+          {
+            "label": "Disney+",
+            "value": "disney"
+          },
+          {
+            "label": "HIDIVE",
+            "value": "hidive"
+          },
+          {
+            "label": "ADN",
+            "value": "adn"
+          },
+          {
+            "label": "Bahamut (Ani-Gamer)",
+            "value": "bahamut"
+          },
+          {
+            "label": "iQIYI",
+            "value": "iqiyi"
+          },
+          {
+            "label": "ABEMA",
+            "value": "abema"
+          }
+        ],
+        "description": "Releases ripped from these streaming services (detected from tags like CR, B-Global, YT) are marked as Best."
+      },
+      {
+        "type": "dropdown",
+        "key": "platformMode",
+        "label": "Platform Mode",
+        "default": "prefer",
+        "options": [
+          {
+            "label": "Prefer (mark as Best)",
+            "value": "prefer"
+          },
+          {
+            "label": "Only show preferred platforms",
+            "value": "only"
+          }
+        ],
+        "description": "Prefer keeps every result but ranks preferred platforms first. Only hides releases from other sources."
+      }
+    ],
+    "description": "SubsPlease simulcast releases, which are ripped from Crunchyroll. Peer counts are scraped by Shiru."
+  }
+]
